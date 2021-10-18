@@ -1,15 +1,21 @@
 import React from 'react';
 
-totalData = () => {
+const TotalData = () => {
+  let result = 0;
+  result += 1;
   return (
     <>
     <header>
-      <ul>
-        <li></li>
+      <ul className="total-world-container">
+        <li><img src="" alt="World-Image"/></li>
+        <div>
+        <li><h2>Total World Cases</h2></li>
+        <li><h3>4333434</h3></li>
+        </div>
       </ul>
     </header>
     </>
   );
-}
+};
 
-export default Home;
+export default TotalData;
