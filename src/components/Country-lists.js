@@ -1,8 +1,16 @@
-import React from 'react';
+import { React, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { GetCovidData } from '../redux/Covid-Data-Reducer/covidDataReducer';
 
 const CountryLists = () => {
-  let result = 0;
-  result += 1;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(GetCovidData());
+  }, []);
+
+  const covidDataStorage = useSelector((state) => state);
+
   return (
     <>
     <main>
