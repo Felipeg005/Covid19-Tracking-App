@@ -1,7 +1,6 @@
 // Actions
 const GET_COVID_DATA = 'CovidDataStore/CovidData/GET_COVID_DATA';
 
-const URL = 'https://us-central1-CovidDatatore-api-e63c8.cloudfunctions.net/CovidDatatoreApi/apps/4dkScpJEBinEhk7DfZib/CovidData';
 const initialState = [];
 // Reducer
 const reducer = (state = initialState, action) => {
@@ -24,8 +23,11 @@ export const GetCovidData = () => async (dispatch) => {
       method: 'GET',
     });
   const data = await response.json();
+  const keys = Object.keys(data.dates['2021-10-18'].countries);
   const state = [];
-  state.push(data.dates['2021-10-18'].countries);
+  keys.forEach((key) => {
+    state.push({ ...data.dates['2021-10-18'].countries[key] });
+  });
   dispatch({
     type: GET_COVID_DATA,
     state,
