@@ -1,15 +1,32 @@
-li {
-  list-style-type: none;
-}
+@media (max-width: 768px) {
+  li {
+    list-style-type: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+  }
+  
+  .menu-container {
+    display: flex;
+  }
+  
+  .total-world-container {
+    display: flex;
+    border: 1px solid red;
+  }
 
-.nav-menu {
-  display: flex;
-}
+  .country-lists-container {
+    border: 1px solid blue;
+    padding: 0;
+  }
 
-.menu-container {
-  display: flex;
-}
+  .card-img-container {
+    display: flex;
+  }
 
-.total-world-container {
-  display: flex;
+  .country-card {
+    width: 50%;
+    border: 1px solid black;
+  }
 }

@@ -6,13 +6,18 @@ const CountryLists = () => {
   return (
     <>
     <main>
+    <h3>Stats by Country</h3>
       <ul className="country-lists-container">
-        <li><img src="" alt="World-Image"/></li>
-        <button className="go-button" type="button">Go</button>
-        <div>
-        <li><h2>Total Country Cases</h2></li>
-        <li><h3>4333434</h3></li>
-        </div>
+        <li className="country-card">
+          <div className="card-img-container">
+          <img src="" alt="Country-Image"/>
+          <button className="go-button" type="button">Go</button>
+          </div>
+          <div>
+          <h2>Total Country Cases</h2>
+          <h3>4333434</h3>
+          </div>
+        </li>
       </ul>
     </main>
     </>
