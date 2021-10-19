@@ -1,7 +1,8 @@
 import { React, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetCovidData } from '../redux/Covid-Data-Reducer/covidDataReducer';
-import CountryCard from './Country-card';
+// import { uuid } from 'uuidv4';
+// import CountryCard from './Country-card';
 
 const CountryLists = () => {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ const CountryLists = () => {
           <h3>4333434</h3>
           </div>
         </li>
-        {
+        {/* {
           covidDataStorage.covidDataReducer.map((country) => (
             <CountryCard
               key={country.id}
@@ -35,7 +36,7 @@ const CountryLists = () => {
               countryTitle={country.name}
             />
           ))
-        }
+        } */}
       </ul>
     </main>
     </>
