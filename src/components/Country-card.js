@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -10,7 +11,7 @@ const CountryCard = (props) => {
 
   const goToDetails = () => {
     history.push(`/Covid19-Tracking-App-React-Redux-Capstone/details/${countryId}`);
-    console.log(history);
+    location.reload();
   };
 
   return (
