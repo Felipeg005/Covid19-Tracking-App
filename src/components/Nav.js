@@ -1,9 +1,16 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 class Nav extends React.Component {
+
+  
+
   render() {
     return (
       <nav className='nav-menu'>
+        {
+          history
+        }
         <h1 className="logo">Covid19 Tracker</h1>
         <ul className='menu-container'>
           <li className="menu-li">Date</li>
