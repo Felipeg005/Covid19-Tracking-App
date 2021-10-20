@@ -8,11 +8,6 @@ const CountryDetails = (props) => {
 
   const history = useHistory();
 
-  const goBack = () => {
-    history.push('/Covid19-Tracking-App-React-Redux-Capstone/');
-    console.log(history);
-  };
-
   return (
     <>
       <li id={countryId} className="country-details">
