@@ -2,12 +2,12 @@ import React from 'react';
 
 const CountryCard = (props) => {
   const {
-    key, countryId, countryTitle,
+    countryId, countryTitle,
   } = props;
 
   return (
     <>
-      <li key={key} id={countryId} className="country-card">
+      <li id={countryId} className="country-card">
         <div className="card-img-container">
         <img src="" alt="Country-Image"/>
         <button className="go-button" type="button">Go</button>

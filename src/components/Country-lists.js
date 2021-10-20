@@ -1,6 +1,5 @@
 import { React, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { uuidv4 } from 'uuidv4';
 import { GetCovidData } from '../redux/Covid-Data-Reducer/covidDataReducer';
 import CountryCard from './Country-card';
 
@@ -31,7 +30,7 @@ const CountryLists = () => {
         {
           covidDataStorage.covidDataReducer.map((country) => (
             <CountryCard
-              key={country.id}
+              key={country.key}
               countryId={country.id}
               countryTitle={country.name}
             />

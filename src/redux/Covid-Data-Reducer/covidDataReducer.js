@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 // Actions
 const GET_COVID_DATA = 'CovidDataStore/CovidData/GET_COVID_DATA';
 
@@ -26,7 +27,7 @@ export const GetCovidData = () => async (dispatch) => {
   const keys = Object.keys(data.dates['2021-10-18'].countries);
   const state = [];
   keys.forEach((key) => {
-    state.push({ ...data.dates['2021-10-18'].countries[key] });
+    state.push({ ...data.dates['2021-10-18'].countries[key], key: uuidv4() });
   });
   dispatch({
     type: GET_COVID_DATA,
