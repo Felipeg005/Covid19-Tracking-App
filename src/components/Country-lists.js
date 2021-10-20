@@ -33,6 +33,7 @@ const CountryLists = () => {
               key={country.key}
               countryId={country.id}
               countryTitle={country.name}
+              totalCases={country.today_confirmed}
             />
           ))
         }
