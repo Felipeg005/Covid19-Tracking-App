@@ -1,16 +1,12 @@
-// import dependencies
 import React from 'react';
 import { Provider } from 'react-redux';
 import App from '../App';
-
-// import react-testing methods
 import { render } from '@testing-library/react';
 import covidDataReducer from '../redux/Covid-Data-Reducer/covidDataReducer';
 import configureStore from 'redux-mock-store';
 
 describe('Unit tests for reducer', () => {
   const GET_COVID_DATA = 'CovidDataStore/CovidData/GET_COVID_DATA';
-  // const middlewares = [thunk] // add your middlewares like `redux-thunk`
   const middlewares = []
   const mockStore = configureStore(middlewares)
   const initialState = {}
