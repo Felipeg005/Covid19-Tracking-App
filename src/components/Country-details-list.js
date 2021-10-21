@@ -6,7 +6,6 @@ import CountryDetails from './Country-details';
 
 const CountryDetailsList = () => {
   const covidDataStorage = useSelector((state) => state);
-  console.log(covidDataStorage);
   if (!covidDataStorage) {
     const dispatch = useDispatch();
 
