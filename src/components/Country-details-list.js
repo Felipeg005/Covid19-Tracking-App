@@ -32,10 +32,19 @@ const CountryDetailsList = () => {
         {
           countrySelected().map((country) => (
             <CountryDetails
-              key={country.key}
-              countryId={country.id}
-              countryTitle={country.name}
-              totalCases={country.today_confirmed}
+            key={country.key}
+              todayConfirmed={country.today_confirmed}
+              todayDeaths={country.today_deaths}
+              todayNewConfirmed={country.today_new_confirmed}
+              todayNewDeaths={country.today_new_deaths}
+              todayNewOpenCases={country.today_new_open_cases}
+              todayNewRecovered={country.today_new_recovered}
+              todayOpenCases={country.today_open_cases}
+              todayRecovered={country.today_recovered}
+              yesterdayConfirmed={country.yesterday_confirmed}
+              yesterdayDeaths={country.yesterday_deaths}
+              yesterdayOpenCases={country.yesterday_open_cases}
+              yesterdayRecovered={country.yesterday_recovered}
             />
           ))
         }
