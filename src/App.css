@@ -29,4 +29,9 @@
     width: 50%;
     border: 1px solid black;
   }
+
+  .country-details {
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -16,7 +16,8 @@
     "eol-last": "off",
     "linebreak-style": "off",
     "no-unused-vars": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "no-restricted-globals": "off"
   },
   "ignorePatterns": [
     "dist/",
