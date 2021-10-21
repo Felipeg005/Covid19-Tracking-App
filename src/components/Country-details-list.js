@@ -5,13 +5,15 @@ import { GetCovidData } from '../redux/Covid-Data-Reducer/covidDataReducer';
 import CountryDetails from './Country-details';
 
 const CountryDetailsList = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(GetCovidData());
-  }, []);
-
   const covidDataStorage = useSelector((state) => state);
+  console.log(covidDataStorage);
+  if (!covidDataStorage) {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+      dispatch(GetCovidData());
+    }, []);
+  }
 
   const countrySelected = () => {
     const history = useHistory();

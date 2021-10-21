@@ -7,7 +7,6 @@ const Nav = () => {
 
   const goBack = () => {
     history.push('/Covid19-Tracking-App-React-Redux-Capstone/');
-    location.reload();
   };
 
   return (
@@ -15,9 +14,8 @@ const Nav = () => {
       {
         history.location.pathname.includes('details')
           ? <button type="button" onClick={goBack}>hello</button>
-          : false
+          : <h1 className="logo">Covid19 Tracker</h1>
       }
-      <h1 className="logo">Covid19 Tracker</h1>
       <ul className='menu-container'>
         <li className="menu-li">Date</li>
         <li className="menu-li">COVID-19 cases worldwide</li>

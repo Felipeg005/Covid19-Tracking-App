@@ -11,12 +11,12 @@ const CountryCard = (props) => {
 
   const goToDetails = () => {
     history.push(`/Covid19-Tracking-App-React-Redux-Capstone/details/${countryId}`);
-    location.reload();
+    // location.reload();
   };
 
   return (
     <>
-      <li id={countryId} className="country-card">
+      <li id={countryId} onClick={goToDetails} className="country-card">
         <div className="card-img-container">
         <img src="" alt="Country-Image"/>
         <button id={countryId} className="go-button" type="button" onClick={goToDetails}>Go</button>

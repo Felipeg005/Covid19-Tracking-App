@@ -19,18 +19,18 @@ const CountryDetails = (props) => {
   console.log(props);
   return (
     <>
-      <li className='country-details'>today Confirmed: {todayConfirmed}<button>Go</button></li>
-      <li className='country-details'>today Deaths: {todayDeaths}<button>Go</button></li>
-      <li className='country-details'>today New Confirmed: {todayNewConfirmed}<button>Go</button></li>
-      <li className='country-details'>today New Deaths: {todayNewDeaths}<button>Go</button></li>
-      <li className='country-details'>today New Open Cases: {todayNewOpenCases}<button>Go</button></li>
-      <li className='country-details'>today New Recovered: {todayNewRecovered}<button>Go</button></li>
-      <li className='country-details'>today Open Cases: {todayOpenCases}<button>Go</button></li>
-      <li className='country-details'>today Recovered: {todayRecovered}<button>Go</button></li>
-      <li className='country-details'>yesterday Confirmed: {yesterdayConfirmed}<button>Go</button></li>
-      <li className='country-details'>yesterday Deaths: {yesterdayDeaths}<button>Go</button></li>
-      <li className='country-details'>yesterday Open Cases: {yesterdayOpenCases}<button>Go</button></li>
-      <li className='country-details'>yesterday Recovered: {yesterdayRecovered}<button>Go</button></li>
+      <li className='detail-card'>today Confirmed: {todayConfirmed}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>today Deaths: {todayDeaths}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>today New Confirmed: {todayNewConfirmed}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>today New Deaths: {todayNewDeaths}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>today New Open Cases: {todayNewOpenCases}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>today New Recovered: {todayNewRecovered}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>today Open Cases: {todayOpenCases}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>today Recovered: {todayRecovered}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>yesterday Confirmed: {yesterdayConfirmed}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>yesterday Deaths: {yesterdayDeaths}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>yesterday Open Cases: {yesterdayOpenCases}<button className="det-btn">Go</button></li>
+      <li className='detail-card'>yesterday Recovered: {yesterdayRecovered}<button className="det-btn">Go</button></li>
     </>
   );
 };
