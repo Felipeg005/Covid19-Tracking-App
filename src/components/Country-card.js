@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import world from '../img/world.png';
@@ -12,7 +11,7 @@ import arrow from '../img/arrow.png';
 
 const CountryCard = (props) => {
   const {
-    countryId, countryTitle, totalCases, color
+    countryId, countryTitle, totalCases, color,
   } = props;
 
   const history = useHistory();
@@ -23,20 +22,20 @@ const CountryCard = (props) => {
 
   const result = () => {
     if (([1, 0, 0, 1][color % 4]) === 0) {
-      return '#4369b0'
+      return '#4369b0';
     }
-    return '#3c5e9c'
-  }
+    return '#3c5e9c';
+  };
 
   const backgroundStyle = {
     backgroundColor: result(),
-  }
-    
+  };
+
   const imgSource = () => {
-    const imgArr = [world, world1, world2, world3, coronavirus, pandemic, virusTransmission]
+    const imgArr = [world, world1, world2, world3, coronavirus, pandemic, virusTransmission];
     imgArr.sort(() => 0.5 - Math.random());
     return imgArr[2];
-  }
+  };
 
   return (
     <>

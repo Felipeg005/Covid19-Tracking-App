@@ -6,13 +6,15 @@ import CountryDetails from './Country-details';
 import world from '../img/simbolo-del-globo-terraqueo.png';
 
 const CountryDetailsList = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(GetCovidData());
-  }, []);
-
   const covidDataStorage = useSelector((state) => state);
+
+  if (!covidDataStorage) {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+      dispatch(GetCovidData());
+    }, []);
+  }
 
   const countrySelected = () => {
     const history = useHistory();

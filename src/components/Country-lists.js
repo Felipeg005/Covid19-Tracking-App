@@ -13,6 +13,14 @@ const CountryLists = () => {
 
   const covidDataStorage = useSelector((state) => state);
 
+  const sumWorldCases = () => {
+    let result = 0;
+    covidDataStorage.covidDataReducer.forEach((country) => {
+      result += country.today_confirmed;
+    });
+    return result;
+  };
+
   return (
     <>
       <header>
@@ -20,7 +28,7 @@ const CountryLists = () => {
         <li><img className="home-total-img" src={world} alt="World-Image"/></li>
         <div>
         <li><h2 className="world-title">Covid-19<br/>Total World Cases</h2></li>
-        <li><h3 className="world-cases">4333434</h3></li>
+        <li><h3 className="world-cases">{sumWorldCases()}</h3></li>
         </div>
       </ul>
     </header>
