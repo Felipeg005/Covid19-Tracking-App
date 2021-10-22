@@ -24,6 +24,7 @@ body {
     display: flex;
     background-color: #5586e3;
     margin: 0;
+    align-items: center;
   }
 
   .country-lists-container {
@@ -34,19 +35,54 @@ body {
 
   .card-img-container {
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .home-total-img {
+    width: 120px;
+    height: 120px;
+    margin: 20px 30px 20px 0;
+    padding: 0;
+  }
+
+  .info-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+    text-align: end;
   }
 
   .card-title {
     font-size: 18px;
+    margin: 2px;
   }
 
   .card-cases {
     font-size: 14px;
+    margin: 2px 2px 10px 2px;
   }
 
   .card-img {
-    width: 60px;
-    height: 60px;
+    width: 110px;
+    height: 110px;
+    margin: 12px 25px 0 35px;
+  }
+
+  .go-img {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+  }
+
+  .go-button {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
   }
 
   .country-details {
@@ -57,7 +93,7 @@ body {
 
   .stats-title {
     margin: 0 0 -16px 0;
-    background-color: #5586e3;
+    background-color: #4470c0;
     padding: 10px;
   }
 }

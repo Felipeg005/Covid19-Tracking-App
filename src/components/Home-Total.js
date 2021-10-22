@@ -1,15 +1,15 @@
 import React from 'react';
+import world from '../img/simbolo-del-globo-terraqueo.png';
 
 const TotalData = () => {
-  let result = 0;
-  result += 1;
+  const covid = 'Covid-19';
   return (
     <>
     <header>
       <ul className="total-world-container">
-        <li><img src="" alt="World-Image"/></li>
+        <li><img className="home-total-img" src={world} alt="World-Image"/></li>
         <div>
-        <li><h2>Total World Cases</h2></li>
+        <li><h2>{covid}<br/>Total World Cases</h2></li>
         <li><h3>4333434</h3></li>
         </div>
       </ul>
