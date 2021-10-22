@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Covid19-Tracking-App/static/css/main.e817f5d1.chunk.css",
+    "main.js": "/Covid19-Tracking-App/static/js/main.f18f9399.chunk.js",
+    "main.js.map": "/Covid19-Tracking-App/static/js/main.f18f9399.chunk.js.map",
+    "runtime-main.js": "/Covid19-Tracking-App/static/js/runtime-main.eca20ac7.js",
+    "runtime-main.js.map": "/Covid19-Tracking-App/static/js/runtime-main.eca20ac7.js.map",
+    "static/js/2.186d8731.chunk.js": "/Covid19-Tracking-App/static/js/2.186d8731.chunk.js",
+    "static/js/2.186d8731.chunk.js.map": "/Covid19-Tracking-App/static/js/2.186d8731.chunk.js.map",
+    "index.html": "/Covid19-Tracking-App/index.html",
+    "static/css/main.e817f5d1.chunk.css.map": "/Covid19-Tracking-App/static/css/main.e817f5d1.chunk.css.map",
+    "static/js/2.186d8731.chunk.js.LICENSE.txt": "/Covid19-Tracking-App/static/js/2.186d8731.chunk.js.LICENSE.txt",
+    "static/media/coronavirus.6127f4a8.png": "/Covid19-Tracking-App/static/media/coronavirus.6127f4a8.png",
+    "static/media/pandemic.e9d3e297.png": "/Covid19-Tracking-App/static/media/pandemic.e9d3e297.png",
+    "static/media/simbolo-del-globo-terraqueo.bf7ff110.png": "/Covid19-Tracking-App/static/media/simbolo-del-globo-terraqueo.bf7ff110.png",
+    "static/media/virus-transmission.4965017d.png": "/Covid19-Tracking-App/static/media/virus-transmission.4965017d.png",
+    "static/media/world(1).980fbfc7.png": "/Covid19-Tracking-App/static/media/world(1).980fbfc7.png",
+    "static/media/world(2).6d7081ee.png": "/Covid19-Tracking-App/static/media/world(2).6d7081ee.png",
+    "static/media/world(3).eb700e06.png": "/Covid19-Tracking-App/static/media/world(3).eb700e06.png",
+    "static/media/world.6d94670e.png": "/Covid19-Tracking-App/static/media/world.6d94670e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eca20ac7.js",
+    "static/js/2.186d8731.chunk.js",
+    "static/css/main.e817f5d1.chunk.css",
+    "static/js/main.f18f9399.chunk.js"
+  ]
+}
