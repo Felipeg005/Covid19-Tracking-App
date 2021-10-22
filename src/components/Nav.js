@@ -12,7 +12,7 @@ const Nav = () => {
   const history = useHistory();
 
   const goBack = () => {
-    history.push('/Covid19-Tracking-App-React-Redux-Capstone/');
+    history.push('/Covid19-Tracking-App/');
   };
 
   return (
