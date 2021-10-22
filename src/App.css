@@ -5,6 +5,7 @@ body {
   width: 100vw;
   color: white;
   overflow-x: hidden;
+  background-color: #4369b0;
 }
 
 @media (max-width: 768px) {
@@ -123,7 +124,15 @@ body {
     transform: rotate(45deg);
   }
 
-  .det-btn {
+  .go-back-img {
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    transform: rotate(-135deg);
+  }
+
+  .det-btn,
+  .go-back-btn {
     background-color: transparent;
     border: none;
   }
