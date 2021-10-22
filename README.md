@@ -1,5 +1,7 @@
 ## Covid-19 Tracker App
 
+Very usefull App to track the Covid-19 worldwide, you can see al cases with specific details for each country.
+
 ![screenshot](./app_screenshot.png)
 
 ## Live Demo
