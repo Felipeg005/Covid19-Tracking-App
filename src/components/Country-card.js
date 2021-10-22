@@ -17,7 +17,7 @@ const CountryCard = (props) => {
   const history = useHistory();
 
   const goToDetails = () => {
-    history.push(`/Covid19-Tracking-App-React-Redux-Capstone/details/${countryId}`);
+    history.push(`/Covid19-Tracking-App/details/${countryId}`);
   };
 
   const result = () => {

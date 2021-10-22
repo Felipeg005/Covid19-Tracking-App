@@ -11,8 +11,8 @@ function App() {
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route path="/Covid19-Tracking-App-React-Redux-Capstone" exact component={Home}></Route>
-          <Route path="/Covid19-Tracking-App-React-Redux-Capstone/details" component={DetailsPage}></Route>
+          <Route path="/Covid19-Tracking-App/" exact component={Home}></Route>
+          <Route path="/Covid19-Tracking-App/details" component={DetailsPage}></Route>
         </Switch>
       </Router>
     </Provider>
