@@ -9,8 +9,8 @@ const TotalData = () => {
       <ul className="total-world-container">
         <li><img className="home-total-img" src={world} alt="World-Image"/></li>
         <div>
-        <li><h2>{covid}<br/>Total World Cases</h2></li>
-        <li><h3>4333434</h3></li>
+        <li><h2 className="world-title">{covid}<br/>Total World Cases</h2></li>
+        <li><h3 className="world-cases">4333434</h3></li>
         </div>
       </ul>
     </header>
