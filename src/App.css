@@ -45,19 +45,18 @@ body {
     margin-left: auto;
     background-color: transparent;
     border: none;
-    margin-left: auto;
   }
 
   .mic-img {
     margin-right: 10px;
   }
-  
+
   .menu-container {
     display: flex;
     align-items: center;
     width: 60%;
   }
-  
+
   .total-world-container {
     display: flex;
     background-color: #5586e3;
