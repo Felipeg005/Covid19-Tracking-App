@@ -3,16 +3,16 @@ import { useHistory } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetCovidData } from '../redux/Covid-Data-Reducer/covidDataReducer';
 import CountryDetails from './Country-details';
+import world from '../img/simbolo-del-globo-terraqueo.png';
 
 const CountryDetailsList = () => {
-  const covidDataStorage = useSelector((state) => state);
-  if (!covidDataStorage) {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-      dispatch(GetCovidData());
-    }, []);
-  }
+  useEffect(() => {
+    dispatch(GetCovidData());
+  }, []);
+
+  const covidDataStorage = useSelector((state) => state);
 
   const countrySelected = () => {
     const history = useHistory();
@@ -29,16 +29,16 @@ const CountryDetailsList = () => {
     <>
     <header>
       <ul className="total-world-container">
-        <li><img src="" alt="World-Image"/></li>
+        <li><img className="home-total-img" src={world} alt="World-Image"/></li>
         <div>
-        <li><h2>Total World Cases</h2></li>
-        <li><h3>4333434</h3></li>
+        <li><h2 className="world-title">{countrySelected()[0].name}<br/></h2></li>
+        <li><h3 className="world-cases">Cases {countrySelected()[0].today_confirmed}</h3></li>
         </div>
       </ul>
     </header>
     <main>
-    <h3>Stats by Country</h3>
-      <ul className="country-lists-container">
+    <h3 className='stats-title'>{countrySelected()[0].name} Details</h3>
+      <ul className="details-lists-container">
         {
           countrySelected().map((country) => (
             <CountryDetails

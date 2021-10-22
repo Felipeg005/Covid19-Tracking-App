@@ -8,7 +8,7 @@ import world3 from '../img/world(3).png';
 import coronavirus from '../img/coronavirus.png';
 import pandemic from '../img/pandemic.png';
 import virusTransmission from '../img/virus-transmission.png';
-import arrow from '../img/arrow.png'
+import arrow from '../img/arrow.png';
 
 const CountryCard = (props) => {
   const {

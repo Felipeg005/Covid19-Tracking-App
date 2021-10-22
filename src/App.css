@@ -4,6 +4,7 @@ body {
   font-family: 'Lato', sans-serif;
   width: 100vw;
   color: white;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -74,6 +75,10 @@ body {
     padding: 0;
   }
 
+  .details-lists-container {
+    padding: 0;
+  }
+
   .card-img-container {
     display: flex;
     justify-content: center;
@@ -118,6 +123,11 @@ body {
     transform: rotate(45deg);
   }
 
+  .det-btn {
+    background-color: transparent;
+    border: none;
+  }
+
   .go-button {
     background-color: transparent;
     border: none;
@@ -137,5 +147,27 @@ body {
     background-color: #35548c;
     padding: 10px;
     font-size: 14px;
+  }
+
+  .detail-card,
+  .detail-card2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4369b0;
+    padding: 15px 0 15px 0;
+  }
+
+  .det-title {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .detail-card2 {
+    background-color: #3c5e9c;
+  }
+
+  .detail-btn {
+    margin-left: auto;
   }
 }

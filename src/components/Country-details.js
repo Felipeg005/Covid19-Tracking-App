@@ -1,4 +1,5 @@
 import React from 'react';
+import arrow from '../img/arrow.png';
 
 const CountryDetails = (props) => {
   const {
@@ -18,18 +19,42 @@ const CountryDetails = (props) => {
 
   return (
     <>
-      <li className='detail-card'>today Confirmed: {todayConfirmed}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today Deaths: {todayDeaths}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today New Confirmed: {todayNewConfirmed}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today New Deaths: {todayNewDeaths}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today New Open Cases: {todayNewOpenCases}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today New Recovered: {todayNewRecovered}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today Open Cases: {todayOpenCases}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today Recovered: {todayRecovered}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>yesterday Confirmed: {yesterdayConfirmed}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>yesterday Deaths: {yesterdayDeaths}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>yesterday Open Cases: {yesterdayOpenCases}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>yesterday Recovered: {yesterdayRecovered}<button className="detail-btn">Go</button></li>
+      <li className='detail-card'>
+        <h3 className="det-title">Today Confirmed: {todayConfirmed}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card2'>
+        <h3 className="det-title">Today Deaths: {todayDeaths}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card'>
+        <h3 className="det-title">Today New Confirmed: {todayNewConfirmed}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card2'>
+        <h3 className="det-title">Today New Deaths: {todayNewDeaths}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card'>
+        <h3 className="det-title">Today New Open Cases: {todayNewOpenCases}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card2'>
+        <h3 className="det-title">Today New Recovered: {todayNewRecovered}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card'>
+        <h3 className="det-title">Today Open Cases: {todayOpenCases}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card2'>
+        <h3 className="det-title">Today Recovered: {todayRecovered}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card'>
+        <h3 className="det-title">Yesterday Confirmed: {yesterdayConfirmed}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card2'>
+        <h3 className="det-title">Yesterday Deaths: {yesterdayDeaths}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card'>
+        <h3 className="det-title">Yesterday Open Cases: {yesterdayOpenCases}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
+      <li className='detail-card2'>
+        <h3 className="det-title">Yesterday Recovered: {yesterdayRecovered}</h3>
+        <button className="det-btn"><img className="go-img" src={arrow} alt="go"/></button></li>
     </>
   );
 };
