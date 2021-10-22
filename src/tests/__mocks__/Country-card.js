@@ -7,10 +7,10 @@ const CountryCard = (props) => {
 
   return (
     <>
-      <li id={countryId} className="country-card">
+      <li data-testid="country-card" id={countryId} className="country-card">
         <div className="card-img-container">
         <img src="" alt="Country-Image"/>
-        <button id={countryId} className="go-button" type="button">Go</button>
+        <button data-testid="go-button" id={countryId} className="go-button" type="button">Go</button>
         </div>
         <div>
         <h2>{countryTitle}</h2>
