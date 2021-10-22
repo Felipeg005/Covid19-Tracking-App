@@ -1,6 +1,5 @@
 import React from 'react';
 import CountryDetailsList from '../components/Country-details-list';
-import TotalDetails from '../components/Details-Total';
 import Nav from '../components/Nav';
 
 class DetailsPage extends React.Component {
@@ -8,7 +7,6 @@ class DetailsPage extends React.Component {
     return (
       <>
       < Nav />
-      <TotalDetails />
       <CountryDetailsList />
       </>
     );
