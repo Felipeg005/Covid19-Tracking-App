@@ -27,6 +27,7 @@ export const GetCovidData = () => async (dispatch) => {
       method: 'GET',
     });
   const data = await response.json();
+  console.log(data);
   const keys = Object.keys(data.dates['2021-10-18'].countries);
   const state = [];
   keys.forEach((key) => {
