@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 const CountryCard = (props) => {
   const {
-    countryId, countryTitle, totalCases,
+    countryId, countryTitle, totalCases, color
   } = props;
 
   const history = useHistory();

@@ -24,6 +24,7 @@ const CountryLists = () => {
               countryId={country.id}
               countryTitle={country.name}
               totalCases={country.today_confirmed}
+              color={country.color}
             />
           ))
         }
