@@ -1,9 +1,11 @@
 import CountryDetails from './Country-details';
 
 const CountryDetailsList = () => {
-    const mockAPI =
-    [
-      {name: "Afghanistan", today_confirmed: 155776, id: "afghanistan", key: 1,
+  const mockAPI = [
+    {
+      name: 'Afghanistan',
+      id: 'afghanistan',
+      key: 1,
       today_confirmed: 155776,
       today_deaths: 7246,
       today_new_confirmed: 12,
@@ -16,14 +18,16 @@ const CountryDetailsList = () => {
       yesterday_deaths: 7243,
       yesterday_open_cases: 65935,
       yesterday_recovered: 8258,
-      },
-      {name: "Albania", id: "albania", today_confirmed: 178188, key: 2},
-    ]
+    },
+    {
+      name: 'Albania', id: 'albania', today_confirmed: 178188, key: 2,
+    },
+  ];
 
-const covidDataStorage = mockAPI;
+  const covidDataStorage = mockAPI;
 
   const countrySelected = () => {
-    const history = '/Covid19-Tracking-App-React-Redux-Capstone/details/afghanistan'
+    const history = '/Covid19-Tracking-App-React-Redux-Capstone/details/afghanistan';
     const countrySelectedArray = [];
     covidDataStorage.forEach((country) => {
       if (history.includes(country.id)) {
