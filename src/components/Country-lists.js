@@ -15,7 +15,7 @@ const CountryLists = () => {
   return (
     <>
     <main>
-    <h3>Stats by Country</h3>
+    <h3 className='stats-title'>Stats by Country</h3>
       <ul className="country-lists-container">
         {
           covidDataStorage.covidDataReducer.map((country) => (

@@ -10,9 +10,10 @@ body {
   li {
     list-style-type: none;
   }
-  
+
   .nav-menu {
     display: flex;
+    background-color: #3c5e9c;
   }
   
   .menu-container {
@@ -21,7 +22,8 @@ body {
   
   .total-world-container {
     display: flex;
-    border: 1px solid red;
+    background-color: #5586e3;
+    margin: 0;
   }
 
   .country-lists-container {
@@ -34,12 +36,28 @@ body {
     display: flex;
   }
 
-  .country-card {
-    background-color: #4369b0;
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-cases {
+    font-size: 14px;
+  }
+
+  .card-img {
+    width: 60px;
+    height: 60px;
   }
 
   .country-details {
     display: flex;
     flex-direction: row;
+    background-color: #385791;
+  }
+
+  .stats-title {
+    margin: 0 0 -16px 0;
+    background-color: #5586e3;
+    padding: 10px;
   }
 }

@@ -30,7 +30,7 @@ export const GetCovidData = () => async (dispatch) => {
   console.log(data);
   const keys = Object.keys(data.dates['2021-10-18'].countries);
   const state = [];
-  let counter = 0;
+  let counter = -1;
   keys.forEach((key) => {
     state.push({ ...data.dates['2021-10-18'].countries[key], key: uuidv4(), color: counter += 1 });
   });
