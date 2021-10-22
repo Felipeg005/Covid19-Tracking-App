@@ -1,38 +1,45 @@
 import React from 'react';
-import { render, cleanup, screen } from '../tests/test-utils';
-import Home from '../pages/Home';
-import store from '../redux/store';
-import { Provider } from 'react-redux';
-import { Router } from 'react-router-dom';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import CountryLists from '../tests/__mocks__/Country-lists';
 
 describe('Unit test for home components', () => {
 
-  beforeEach(() => {
-    const history = jest.mock('react-router-dom', () => ({
-      ...jest.requireActual('react-router-dom'),
-      useHistory: () => ({
-        Push: jest.fn()
-      })
-    }));
-
-    render(
-      <Provider store={store}>
-        <Router history={history}>
-          <Home />
-        </Router>
-      </Provider>
-    )
+  test('Displays a main section called Stats by country', () => {
+    const div = document.createElement('div');
+    render (<CountryLists />, div )
+    expect(screen.getByText('Stats by Country')).toBeInTheDocument()
   });
 
-  afterEach(() => {
-    cleanup()
+  test('Renders a list ready for countries', () => {
+    const div = document.createElement('div');
+    const component = render (<CountryLists />, div )
+    expect(screen.getByTestId('country-lists-container'))
   });
 
-
-  test('renders a list ready for countries', () => {
-    const div = document.createElement('div')
-    const component = render (<Home />, div)
-    expect(component.container).toMatchSnapshot()
+  test('Displays the total country objects of the state', () => {
+    const div = document.createElement('div');
+    const component = render (<CountryLists />, div )
+    expect(component.container).toBe(1)
   });
+
+  test('Country name displays correctly', () => {
+    const div = document.createElement('div');
+    const component = render (<CountryLists />, div )
+    expect(component.container).toBe(1)
+  });
+
+  test('Each country card has the number of cases', () => {
+    const div = document.createElement('div');
+    const component = render (<CountryLists />, div )
+    expect(component.container).toBe(1)
+  });
+
+  test('Each country card contains a go details button', () => {
+    const div = document.createElement('div');
+    const component = render (<CountryLists />, div )
+    expect(component.container).toBe(1)
+  });
+
 });
 
