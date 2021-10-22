@@ -18,18 +18,18 @@ const CountryDetails = (props) => {
 
   return (
     <>
-      <li className='detail-card'>today Confirmed: {todayConfirmed}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today Deaths: {todayDeaths}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today New Confirmed: {todayNewConfirmed}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today New Deaths: {todayNewDeaths}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today New Open Cases: {todayNewOpenCases}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today New Recovered: {todayNewRecovered}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today Open Cases: {todayOpenCases}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>today Recovered: {todayRecovered}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>yesterday Confirmed: {yesterdayConfirmed}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>yesterday Deaths: {yesterdayDeaths}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>yesterday Open Cases: {yesterdayOpenCases}<button className="detail-btn">Go</button></li>
-      <li className='detail-card'>yesterday Recovered: {yesterdayRecovered}<button className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>today Confirmed: {todayConfirmed}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>today Deaths: {todayDeaths}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>today New Confirmed: {todayNewConfirmed}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>today New Deaths: {todayNewDeaths}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>today New Open Cases: {todayNewOpenCases}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>today New Recovered: {todayNewRecovered}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>today Open Cases: {todayOpenCases}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>today Recovered: {todayRecovered}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>yesterday Confirmed: {yesterdayConfirmed}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>yesterday Deaths: {yesterdayDeaths}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>yesterday Open Cases: {yesterdayOpenCases}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
+      <li data-testid="detail-card" className='detail-card'>yesterday Recovered: {yesterdayRecovered}<button data-testid="detail-btn" className="detail-btn">Go</button></li>
     </>
   );
 };
