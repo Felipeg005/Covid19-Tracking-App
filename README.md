@@ -2,6 +2,10 @@
 
 Very usefull App to track the Covid-19 worldwide, you can see al cases with specific details for each country.
 
+## Presentation Video
+
+[Please visit this link to see my video presentation.](https://www.loom.com/share/daf5dc45e3094592816d7bb5b0bf884a)
+
 ![screenshot](./app_screenshot.png)
 
 ## Live Demo
