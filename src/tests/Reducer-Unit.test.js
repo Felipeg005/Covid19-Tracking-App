@@ -1,21 +1,21 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import App from '../App';
 import { render } from '@testing-library/react';
-import covidDataReducer from '../redux/Covid-Data-Reducer/covidDataReducer';
 import configureStore from 'redux-mock-store';
+import App from '../App';
+import covidDataReducer from '../redux/Covid-Data-Reducer/covidDataReducer';
 
 describe('Unit tests for reducer', () => {
   const GET_COVID_DATA = 'CovidDataStore/CovidData/GET_COVID_DATA';
-  const middlewares = []
-  const mockStore = configureStore(middlewares)
-  const initialState = {}
+  const middlewares = [];
+  const mockStore = configureStore(middlewares);
+  const initialState = {};
   const store = mockStore(initialState);
 
-  render (
+  render(
     <Provider store={mockStore(initialState)}>
       <App />
-    </Provider>
+    </Provider>,
   );
 
   describe('Covid data reducer function test', () => {
@@ -27,7 +27,7 @@ describe('Unit tests for reducer', () => {
           Country1: '3',
           Country_name: '3',
         },
-      })).toEqual({"Country1": "3", "Country_name": "3", "id": 3});
+      })).toEqual({ Country1: '3', Country_name: '3', id: 3 });
     });
   });
 
@@ -40,9 +40,9 @@ describe('Unit tests for reducer', () => {
           Country1: '3',
           Country_name: '3',
         },
-      })
-        const actions = store.getActions()
-        expect(actions[0].type).toEqual('CovidDataStore/CovidData/GET_COVID_DATA')
+      });
+      const actions = store.getActions();
+      expect(actions[0].type).toEqual('CovidDataStore/CovidData/GET_COVID_DATA');
     });
   });
 });
