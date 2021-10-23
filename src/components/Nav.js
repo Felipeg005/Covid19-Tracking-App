@@ -1,12 +1,11 @@
-/* eslint-disable */
 import React from 'react';
 import { useHistory } from 'react-router';
-import moment from "moment";
+import moment from 'moment';
 import mic from '../img/microphone-16.png';
 import settings from '../img/settings-16.png';
 import arrow from '../img/arrow.png';
 
-const date = moment().format("YYYY-MM-DD")
+const date = moment().format('YYYY-MM-DD');
 
 const Nav = () => {
   const history = useHistory();
