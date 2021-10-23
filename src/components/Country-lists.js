@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { React, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetCovidData } from '../redux/Covid-Data-Reducer/covidDataReducer';
 import world from '../img/simbolo-del-globo-terraqueo.png';
@@ -21,6 +21,11 @@ const CountryLists = () => {
     return result;
   };
 
+  const [filteredCountry, setCountry] = useState('');
+  const updateCountry = (e) => {
+    setCountry(e);
+  };
+
   return (
     <>
       <header>
@@ -33,10 +38,15 @@ const CountryLists = () => {
       </ul>
     </header>
     <main>
+    <div className="filter-container">
     <h3 className='stats-title'>Stats by Country</h3>
+    <input className="input-filter" placeholder="Search Your Country" onChange={(e) => updateCountry(e.target.value)}></input>
+    </div>
       <ul className="country-lists-container">
         {
-          covidDataStorage.covidDataReducer.map((country) => (
+          covidDataStorage.covidDataReducer.filter(
+            (country) => country.name.toLowerCase().includes(filteredCountry.toLowerCase()),
+          ).map((country) => (
             <CountryCard
               key={country.key}
               countryId={country.id}
