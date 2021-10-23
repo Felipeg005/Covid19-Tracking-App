@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Covid19-Tracking-App/static/css/main.e90466b7.chunk.css",
+    "main.css": "/Covid19-Tracking-App/static/css/main.72ffe50e.chunk.css",
     "main.js": "/Covid19-Tracking-App/static/js/main.bb26eee8.chunk.js",
     "main.js.map": "/Covid19-Tracking-App/static/js/main.bb26eee8.chunk.js.map",
     "runtime-main.js": "/Covid19-Tracking-App/static/js/runtime-main.eca20ac7.js",
@@ -8,7 +8,7 @@
     "static/js/2.5c914389.chunk.js": "/Covid19-Tracking-App/static/js/2.5c914389.chunk.js",
     "static/js/2.5c914389.chunk.js.map": "/Covid19-Tracking-App/static/js/2.5c914389.chunk.js.map",
     "index.html": "/Covid19-Tracking-App/index.html",
-    "static/css/main.e90466b7.chunk.css.map": "/Covid19-Tracking-App/static/css/main.e90466b7.chunk.css.map",
+    "static/css/main.72ffe50e.chunk.css.map": "/Covid19-Tracking-App/static/css/main.72ffe50e.chunk.css.map",
     "static/js/2.5c914389.chunk.js.LICENSE.txt": "/Covid19-Tracking-App/static/js/2.5c914389.chunk.js.LICENSE.txt",
     "static/media/coronavirus.6127f4a8.png": "/Covid19-Tracking-App/static/media/coronavirus.6127f4a8.png",
     "static/media/pandemic.e9d3e297.png": "/Covid19-Tracking-App/static/media/pandemic.e9d3e297.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.eca20ac7.js",
     "static/js/2.5c914389.chunk.js",
-    "static/css/main.e90466b7.chunk.css",
+    "static/css/main.72ffe50e.chunk.css",
     "static/js/main.bb26eee8.chunk.js"
   ]
 }
